@@ -59,12 +59,9 @@ only screen and (                min-resolution: 2dppx) {
   padding-top: 48px;
   padding-bottom: 110px;
 }
-.site-section{
-  background-image: url("../img/intro-bg.png");
-  background-repeat: no-repeat;
-  background-position: left calc(50% + 650px )bottom;
-  background-size: 1100px;
-  padding-bottom: 124px;
+.header-container{
+  display: flex;
+ align-items: center;
 }
 .header-img{
   width: 149px;
@@ -72,9 +69,12 @@ only screen and (                min-resolution: 2dppx) {
 }
 .header-link{
   text-decoration: none;
+  display: inline-block;
+  vertical-align: baseline;
 }
 .site-nav{
   display: flex;
+  margin-left: auto;
 }
 .site-menu{
   display: flex;
@@ -100,6 +100,9 @@ only screen and (                min-resolution: 2dppx) {
   padding: 12px 34px;
   border-radius: 5px;
 }
+
+
+
 .simple-title{
   width: 540px;
   font-family: Rubik;
@@ -120,6 +123,8 @@ only screen and (                min-resolution: 2dppx) {
   color: #ccc;
 }
 .simple-link{
+  display: inline-block;
+  vertical-align: baseline;
   text-decoration: none;
   color: white;
   padding: 10px 24px;
@@ -131,17 +136,27 @@ only screen and (                min-resolution: 2dppx) {
   color: #242A45;
   margin-left: 16px;
 }
+.simple-section{
+  height: 485px;
+  width: auto;
+  background-image: url("../img/intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 650px )bottom;
+}
+
+
 
 .features-section{
+  padding-top: 80px;
   text-align: center;
-  background-image: url("../img/Group32.svg");
+  background-image: url("../img/Group120.png");
   background-repeat: no-repeat;
-  background-position: calc(50% + -400px)bottom;
+  background-position: calc(50% + -350px)bottom ;
 }
 .features-text{
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   width: 520px;
   color: #ccc;
   font-family: Rubik;
@@ -154,14 +169,15 @@ only screen and (                min-resolution: 2dppx) {
   display: flex;
   padding: 0;
   margin: 0;
-  width: 730px;
-  margin-left:auto;
-  margin-right: auto;
   list-style: none;
+  justify-content: center;
 }
 .features-item{
   position: relative;
   padding-bottom: 21px;
+}
+.features-link:hover{
+  color:#FA5959 ;
 }
 .features-link{
   text-decoration: none;
@@ -191,11 +207,15 @@ only screen and (                min-resolution: 2dppx) {
 .middle{
   padding-right: 75px;
 }
+
+
 .click-box{
+  margin-top: 72px;
   margin-left: auto;
   width: 445px;
   text-align: start;
-  padding-bottom: 200px;
+  padding-top: 57px;
+  padding-bottom: 130px;
 }
 .click-title{
   font-family: Rubik;
@@ -203,8 +223,9 @@ only screen and (                min-resolution: 2dppx) {
   font-weight: 500;
   font-size: 32px;
   line-height: 52px;
+  margin-top: 0;
   margin-bottom: 50px;
-  margin-top: 100px;
+
 }
 .click-text{
   font-family: Rubik;
@@ -216,6 +237,8 @@ only screen and (                min-resolution: 2dppx) {
  color: #ccc;
 }
 .click-link{
+  display:inline-block;
+  vertical-align:baseline;
   text-decoration: none;
   color: white;
   background-color:#5267DF;
@@ -226,14 +249,14 @@ only screen and (                min-resolution: 2dppx) {
 .extention{
   text-align: center;
   padding-top: 149px;
-  padding-bottom: 200px;
+
 }
 .extention-text{
   width: 540px;
   color: #ccc;
   margin-left: auto;
   margin-right: auto;
-
+  margin-bottom: 0;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -301,10 +324,12 @@ only screen and (                min-resolution: 2dppx) {
 
 
 .faq-box{
-  justify-content: center;
+  text-align: center;
   padding-top: 149px;
+  padding-bottom: 148px;
 }
 .faq-title{
+  text-align:center;
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -368,21 +393,21 @@ only screen and (                min-resolution: 2dppx) {
   background-color: #5267DF;
   padding: 10px 24px;
   border-radius: 5px;
-  margin-top: 54px;
+  margin-top: 56px;
 }
 
-.site-footer{
+.contact-section{
   background-color: #5267DF;
   padding-top: 60px;
   padding-bottom: 74px;
 }
-.footer-box{
+.contact-box{
   text-align: center;
   width: 460px;
   margin-left: auto;
   margin-right: auto;
 }
-.footer-joiners{
+.contact-joiners{
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -392,7 +417,7 @@ only screen and (                min-resolution: 2dppx) {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-.footer-page{
+.contact-page{
 font-family: Rubik;
 font-style: normal;
 font-weight: 500;
@@ -400,14 +425,14 @@ font-size: 32px;
 line-height: 40px;
 color: white;
 }
-.footer-input{
+.contact-input{
   width: 300px;
   border: none;
   border-radius: 5px;
   padding: 20px 90px 20px 20px;
   background-color: #fff;
 }
-.footer-button{
+.contact-button{
   border: none;
   border-radius: 5px;
   background-color: #FA5959;
@@ -417,11 +442,11 @@ color: white;
 }
 
 
-.extra-footer{
+.site-footer{
   background-color: #222;
   padding: 36px;
 }
-.inside-footer{
+.footer-container{
   display: flex;
 }
 .footer-menu{
